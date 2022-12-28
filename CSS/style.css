@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url(../Img/8552481.jpeg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    position: absolute;
+    top: 10px;
+    right: 40%;
+    /* left: 50%; */
+    font-size: 65px;
+    font-weight: bold;
+}
+#board{
+    box-shadow: rgba(22, 17, 20, 0.4) -5px 5px, rgba(36, 23, 31, 0.3) -10px 10px, rgba(26, 3, 18, 0.2) -15px 15px, rgba(29, 9, 22, 0.1) -20px 20px, rgba(26, 8, 19, 0.05) -25px 25px;
+    background: linear-gradient(rgb(43, 138, 170),rgb(12, 204, 12));
+    width: 50vmin;
+    height: 52vmin;
+    margin-right: 40%;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows:repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    border-radius: 20px;
+}
+.head{
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    border-radius: 8px;
+
+}
+.snake{
+    background: linear-gradient(yellow, green);
+    border: .25vmin dashed black;
+    border-radius: 50%;
+}
+.food{
+    background: linear-gradient(yellow, green);
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+}
+#scoreBox{
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 100px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
